@@ -67,7 +67,7 @@ body {
 }
 
 ._container {
-    width: 1046px;
+    max-width: 1046px;
     margin: 0 auto;
 }
 
@@ -167,6 +167,7 @@ body {
 }
 
 .first-page-blocks {
+    width: 1046px;
     margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
@@ -178,13 +179,14 @@ body {
     background-color: white;
     color: black;
     height: 190px;
-    width: 270px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
+    margin: 10px;
 }
 
 
@@ -226,6 +228,7 @@ body {
     margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .experience-block {
@@ -273,10 +276,10 @@ body {
     height: 320px;
     flex-wrap: wrap;
     align-content: flex-end;
+    margin: 15px
 }
 
 .practice-block {
-
     background-color: white;
     color: black;
     height: 340px;
@@ -294,6 +297,8 @@ body {
 }
 
 .who-we-are {
+    padding: 100px 0;
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -373,7 +378,7 @@ body {
 }
 
 .clients {
-    width: 1046px;
+    padding: 50px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -381,10 +386,15 @@ body {
     align-items: flex-end;
 }
 
+.clients img {
+    padding: 20px;
+}
+
 .subscribe {
+    width: 100%;
     display: flex;
     color: white;
-    height: 125px;
+    min-height: 125px;
     background-color: #17213C;
     flex-direction: row;
     flex-wrap: wrap;
@@ -392,8 +402,17 @@ body {
     align-items: center;
 }
 
+
+.subscribe-text {
+    padding-left: 20px;
+}
+
+.subscribe-input {
+    position: relative;
+}
+
 .subscribe-input input {
-    padding: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 15px;
     width: 425px;
     height: 60px;
     border-radius: 10px;
@@ -401,18 +420,21 @@ body {
 }
 
 .butn {
+    top: 1px;
+    right: 0px;
     border: none;
-    position: relative;
-    right: 115px;
+    position: absolute;
     border-radius: 10px;
-    height: 60px;
+    height: 61px;
     width: 110px;
     background-color: #FF7B47;
     color: white;
 
 }
 
-.getin-section {}
+.getin-section {
+    margin: 100px 0px;
+}
 
 .getin-blocks {
     display: flex;
@@ -568,6 +590,33 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 840px) {
+    .subscribe-text {
+        padding: 15px 15px;
+    }
+
+    .subscribe-input {
+        position: relative;
+        margin: 15px;
+    }
+
+    .subscribe {
+        min-height: 200px;
+    }
+
+    .getin-section {
+        margin: 250px 0px 0px 0px;
+    }
+
+    .first-page-blocks {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -581,5 +630,26 @@ body {
 
     .experience-blocks {
         justify-content: center;
+    }
+
+    .subscribe-input input {
+        width: 270px;
+    }
+
+    .getin-section {
+        margin: 350px 0px 0px 0px;
+    }
+
+
+}
+
+@media (max-width: 1080px) {
+    .first-page-blocks {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 }
