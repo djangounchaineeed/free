@@ -31,7 +31,7 @@ h6 {
 }
 
 h1 {
-
+    text-align: center;
     margin: 0 0 25px 0;
     color: #252B42;
     font-size: 40px;
@@ -42,6 +42,7 @@ h1 {
 }
 
 h4 {
+    text-align: center;
     font-weight: 400;
     font-size: 14px;
     color: #737373;
@@ -244,4 +245,153 @@ body {
 .block-active>h4,
 .block-active>p {
     color: white;
+}
+
+.practice-txt-blocks {
+    margin: 100px auto;
+}
+
+
+
+.practice-blocks-container {
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: flex-end;
+}
+
+.practice-block-container {
+    display: flex;
+    max-width: 240px;
+    height: 320px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.practice-block {
+
+    background-color: white;
+    color: black;
+    height: 340px;
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.header-text {
+    padding: 35px 30px 10px 25px;
+}
+
+.who-we-are {}
+
+.who-we-are-video-section {
+    display: flex;
+}
+
+.who-we-are-video {
+    width: 600px;
+}
+
+.who-we-are-section {
+
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.who-we-are-section-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.who-we-are-section-text>h1 {
+    text-align: left;
+}
+
+.who-we-are-section-text>h4 {
+    text-align: left;
+}
+
+.who-we-are-section-blocks {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.who-we-are-section-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.who-we-are-section-block-text {
+    width: 280px;
+    margin: 0px 0px 0px 10px;
+}
+
+.who-we-are-section-block-text-one {
+    font-weight: 700;
+    margin: 2px 0px 24px;
+}
+
+.clients-subscribe {
+    height: 340px;
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.clients {
+    width: 1046px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.subscribe {
+    width: 1046px;
+    display: flex;
+    color: white;
+    height: 125px;
+    background-color: #17213C;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe-input input {
+    padding: 0px 0px 0px 25px;
+    width: 425px;
+    height: 60px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.butn {
+    border: none;
+    position: relative;
+    right: 115px;
+    border-radius: 10px;
+    height: 60px;
+    width: 110px;
+    background-color: #FF7B47;
+    color: white;
+
 }
