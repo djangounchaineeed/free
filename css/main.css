@@ -46,7 +46,6 @@ h4 {
     font-weight: 400;
     font-size: 14px;
     color: #737373;
-    margin: 0 0 25px 0;
 }
 
 
@@ -68,7 +67,7 @@ body {
 }
 
 ._container {
-    max-width: 1046px;
+    width: 1046px;
     margin: 0 auto;
 }
 
@@ -81,7 +80,7 @@ body {
 }
 
 .header.logo {
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #252B42;
     font-size: 24px;
     font-weight: 800;
@@ -113,6 +112,7 @@ body {
 }
 
 .first-page-text-button {
+    margin: 25px 0 120px 0;
     display: flex;
     width: 45%;
     flex-direction: column;
@@ -170,30 +170,35 @@ body {
     margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .first-page-block {
-    margin: 10px 30px;
     padding: 25px 30px;
     background-color: white;
     color: black;
-    height: 250px;
-    width: 330px;
+    height: 190px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
-
+    align-content: flex-start;
 }
 
+
+
 .first-page-block>h4 {
+    text-align: left;
+    margin: 0 auto;
     color: #252B42;
     font-size: 24px;
     font-weight: 800;
 }
 
 .first-page-block>p {
+    margin: 0 auto;
     color: #737373;
     font-size: 14px;
 }
@@ -304,17 +309,18 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .who-we-are-video {
-    width: 600px;
+    padding: 25px 25px 25px 5px;
 }
 
 .who-we-are-section {
 
+    padding: 10px 10px 30px 10px;
     display: flex;
-    width: 335px;
+    max-width: 335px;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -361,7 +367,6 @@ body {
 
 .clients-subscribe {
     height: 340px;
-    margin: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -372,13 +377,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
-    align-content: center;
 }
 
 .subscribe {
-    width: 1046px;
     display: flex;
     color: white;
     height: 125px;
@@ -483,6 +486,8 @@ body {
 
 
 .upper-footer {
+    margin: 0 auto;
+    max-width: 1046px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -494,33 +499,87 @@ body {
 
 
 
+.upper-footer-text {
+    padding: 10px;
+    line-height: 24px;
+}
+
+.upper-footer-text-big {
+    font-weight: 700;
+}
+
+.upper-footer-text-small {
+    color: #737373;
+}
+
 .upper-footer-butn {
+    padding: 10px;
+
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 60px;
-    width: 110px;
+    width: 160px;
     background-color: #FF7B47;
     color: white;
 }
 
 .middle-footer {
+    display: flex;
+    line-height: 30px;
     background-color: #17213C;
+    flex-wrap: wrap;
 }
 
 .middle-footer-container a {
     color: white;
 
 }
-.middle-footer-container  {
+
+.middle-footer-container {
     color: white;
     display: flex;
+    padding: 30px 0 30px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .lower-footer {
+    margin: 0 auto;
+    max-width: 1046px;
     padding: 35px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+}
+
+.middle-footer-head-link {
+    font-weight: 700;
+}
+
+.middle-footer-last-links {
+    line-height: 40px;
+}
+
+.middle-footer ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 540px) {
+    .upper-footer {
+        justify-content: center;
+    }
+
+    .lower-footer {
+        justify-content: space-around
+    }
+
+    .experience-blocks {
+        justify-content: center;
+    }
 }
