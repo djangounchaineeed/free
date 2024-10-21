@@ -288,10 +288,23 @@ body {
     padding: 35px 30px 10px 25px;
 }
 
-.who-we-are {}
+.who-we-are {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+}
 
 .who-we-are-video-section {
+    width: 1046px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .who-we-are-video {
@@ -394,4 +407,120 @@ body {
     background-color: #FF7B47;
     color: white;
 
+}
+
+.getin-section {}
+
+.getin-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.getin-block-container {
+    background-color: white;
+    height: 330px;
+    width: 330px;
+}
+
+.getin-block {
+    height: 220px;
+    display: flex;
+    padding: 45px 35px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.getin-block-container-active {
+    width: 330px;
+    color: white;
+    height: 400px;
+    background-color: #17213C;
+
+}
+
+.getin-block-button {
+    border-radius: 10px;
+    height: 60px;
+    width: 110px;
+    background-color: white;
+    color: #FF7B47;
+    margin: #FF7B47 2px solid;
+}
+
+.getin-block-button-active {
+    border-radius: 10px;
+    height: 60px;
+    width: 110px;
+    background-color: none;
+    color: white;
+    margin: white 2px solid;
+}
+
+.active-btn {
+    text-align: center;
+    border: white 1px solid;
+    color: white;
+    border-radius: 10px;
+    width: 160px;
+    height: 45px;
+    background-color: #17213C;
+    align-content: center;
+}
+
+.getin-block button {
+    border: #FF7B47 1px solid;
+    color: #FF7B47;
+    border-radius: 10px;
+    width: 160px;
+    height: 45px;
+    background-color: white;
+}
+
+
+.upper-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10px 25px 10px;
+}
+
+
+
+
+.upper-footer-butn {
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 110px;
+    background-color: #FF7B47;
+    color: white;
+}
+
+.middle-footer {
+    background-color: #17213C;
+}
+
+.middle-footer-container a {
+    color: white;
+
+}
+.middle-footer-container  {
+    color: white;
+    display: flex;
+}
+
+.lower-footer {
+    padding: 35px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
 }
